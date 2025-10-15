@@ -17,7 +17,10 @@
 
   home.packages = with pkgs; [
     watch
+    xclip
   ];
+
+  home.file.".ssh/authorized_keys".text = builtins.concatStringsSep "\n" myvars.sshpk + "\n";
 
   programs.git = {
     enable = true;

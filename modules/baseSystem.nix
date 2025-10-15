@@ -77,7 +77,7 @@
   users.users."${myvars.username}" = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
-    openssh.authorizedKeys.keys = [ "${myvars.sshpk}" ];
+    openssh.authorizedKeys.keys = myvars.sshpk;
     shell = pkgs.zsh;
   };
 

@@ -20,7 +20,7 @@
     uv
 
     # Utilities
-    lm-sensors
+    lm_sensors
 
   ];
 
