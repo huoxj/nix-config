@@ -79,6 +79,7 @@
     extraGroups = [ "wheel" "networkmanager" ];
     openssh.authorizedKeys.keys = myvars.sshpk;
     shell = pkgs.zsh;
+    linger = true;
   };
 
 }
