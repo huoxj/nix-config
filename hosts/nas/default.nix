@@ -25,6 +25,7 @@ in {
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = hostname;
+  networking.firewall.enable = false;
 
   programs.nix-ld.enable = true;
 
