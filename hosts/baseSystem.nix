@@ -55,7 +55,7 @@
   ];
 
   services.cron.enable = true;
-  services.openssh.enable = true;
+  services.openssh.enable = lib.mkDefault true;
 
   programs.neovim = {
     enable = true;

@@ -16,7 +16,7 @@
 in {
   imports = [
     ./hardware-configuration.nix
-    ./../../modules/baseSystem.nix
+    ../baseSystem.nix
 
     ./../../modules/container/podman.nix
   ];

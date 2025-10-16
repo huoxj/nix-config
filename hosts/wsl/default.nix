@@ -15,7 +15,7 @@
   hostname = "wsl-nixos";
 in {
   imports = [
-    ./../../modules/baseSystem.nix
+    ../baseSystem.nix
 
     ./../../modules/container/podman.nix
   ];
