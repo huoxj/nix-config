@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   myvars,
   ...
 }: {
@@ -76,7 +77,7 @@
 
   users.users."${myvars.username}" = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "docker" ];
     openssh.authorizedKeys.keys = myvars.sshpk;
     shell = pkgs.zsh;
     linger = true;

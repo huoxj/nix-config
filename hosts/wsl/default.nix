@@ -17,7 +17,7 @@ in {
   imports = [
     ../baseSystem.nix
 
-    ./../../modules/container/podman.nix
+    ../../modules/container/docker.nix
   ];
 
   wsl = {

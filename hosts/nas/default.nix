@@ -18,7 +18,7 @@ in {
     ./hardware-configuration.nix
     ../baseSystem.nix
 
-    ./../../modules/container/podman.nix
+    ../../modules/container/docker.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
