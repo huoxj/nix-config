@@ -20,7 +20,15 @@
     gdb
     cmake
     xmake
+    clang-tools
+    bear
     uv
+
+    (pkgs.buildFHSEnv {
+      name = "pixi";
+      runScript = "pixi";
+      targetPkgs = pkgs: with pkgs; [ pixi ];
+    })
 
   ];
 

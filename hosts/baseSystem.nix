@@ -53,6 +53,7 @@
     # misc
     neofetch
     which
+    kmod
   ];
 
   services.cron.enable = true;
